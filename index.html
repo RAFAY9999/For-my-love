@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For My JAAN 💖</title>
+    <link rel="icon" href="data/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;500&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <!-- 📸 Fullscreen Image Popup -->
+    <div class="image-popup" id="imagePopup">
+        <button class="close-btn" onclick="closeImagePopup()">&times;</button>
+        <img id="popupImage" src="" alt="Popup Image" />
+    </div>
+
+    <!-- Header Image with Name -->
+    <div class="overlay">
+        <img src="data/background.jpg" alt="My JAAN" />
+        <h1>💕 EMAAN 💕</h1>
+    </div>
+
+    <!-- Image Gallery -->
+    <div class="gallery">
+        <img src="data/img1.jpg" alt="Pic 1">
+        <img src="data/img2.jpg" alt="Pic 2">
+        <img src="data/img3.jpg" alt="Pic 3">
+        <img src="data/img4.jpg" alt="Pic 4">
+        <img src="data/img5.jpg" alt="Pic 5">
+        <img src="data/img6.jpg" alt="Pic 6">
+        <img src="data/img7.jpg" alt="Pic 7">
+        <img src="data/img8.jpg" alt="Pic 8">
+        <img src="data/img9.jpg" alt="Pic 9">
+        <img src="data/img10.jpg" alt="Pic 10">
+        <img src="data/img11.jpg" alt="Pic 11">
+        <img src="data/img12.jpg" alt="Pic 12">
+        <img src="data/img13.jpg" alt="Pic 13">
+        <img src="data/img14.jpg" alt="Pic 14">
+        <img src="data/img15.jpg" alt="Pic 15">
+        <img src="data/img16.jpg" alt="Pic 16">
+        <img src="data/img17.jpg" alt="Pic 17">
+        <img src="data/img18.jpg" alt="Pic 18">
+        <img src="data/img19.jpg" alt="Pic 19">
+        <img src="data/img20.jpg" alt="Pic 20">
+        <img src="data/img21.jpg" alt="Pic 21">
+        <img src="data/img22.jpg" alt="Pic 22">
+        <img src="data/img23.jpg" alt="Pic 23">
+    </div>
+
+    <!-- Video Gallery -->
+    <div class="video-gallery">
+        <h2>🎥 Apki Videos</h2>
+        <div class="videos">
+            <video controls src="data/video1.mp4"></video>
+            <video controls src="data/video2.mp4"></video>
+            <video controls src="data/video3.mp4"></video>
+            <video controls src="data/video4.mp4"></video>
+            <video controls src="data/video5.mp4"></video>
+            <video controls src="data/video6.mp4"></video>
+        </div>
+    </div>
+
+    <!-- Romantic Notes -->
+    <div class="notes">
+        <div class="note-box">Phool to mein tumhe laa ke dedun pr kya faida tum to in phoolon se bhi ziyada khubsurat
+            ho...!🌷</div>
+        <div class="note-box">Dil ke liye tum mohabbat ho, Rooh ke liye tum jaan ho, Aur ankh ke liye tum kaafi ho...!🌼
+        </div>
+        <div class="note-box">I Love You Forever...!💖</div>
+    </div>
+
+    <!-- Music Section -->
+    <div class="music-section">
+        <h2>Apke Favourite Songs</h2>
+        <select id="trackSelector">
+            <option value="data/song1.mp3">Tere sawalon ka</option>
+            <option value="data/song2.mp3">Maula mere</option>
+            <option value="data/song3.mp3">Iqtidar OST</option>
+        </select>
+        <audio id="audioPlayer" controls>
+            <source src="data/song1.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <!-- Chat Section -->
+    <div class="chat-section">
+        <h2>💬 Chat Box</h2>
+        <div class="chat-box" id="chatBox"></div>
+        <div class="chat-input">
+            <input type="text" id="messageInput" placeholder="Type your heart out... ❤️" />
+            <button onclick="sendMessage()">Send</button>
+        </div>
+        <p id="statusMessage"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
